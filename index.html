@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MYP final</title>
+	<style type="text/css">
+		nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 200 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 100px;
+}
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #FFEBEE; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 25px;
+padding-top: 0px;
+border-radius: 5px; 
+list-style: none;
+width:150px;
+height:50px;
+position: relative;
+display: inline-table;
+}
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+float: left;
+width: 1300px;
+text-align: center;
+color: #000000;
+}
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #FFEBEE 0%, #FFEBEE 40%);
+background: -moz-linear-gradient(top, #FFEBEE 0%, #FFEBEE 40%);
+background: -webkit-linear-gradient(top, #FFEBEE 0%,#FFEBEE 40%);
+color: #000000
+}
+
+/* color for the link in the menu*/
+nav ul li:hover a {
+color: #000000;
+text-decoration: none;
+background: #FFEBEE;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #FFEBEE; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #FFEBEE;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #000000;
+} 
+
+/*background color when you go over the links can also change color of text here if you want */
+nav ul ul li a:hover {
+background: #FFEBEE;
+background: linear-gradient(top, #FFEBEE 0%, #FFEBEE 40%);
+background: -moz-linear-gradient(top, #FFEBEE 0%, #FFEBEE 40%);
+background: -webkit-linear-gradient(top, #FFEBEE 0%,#FFEBEE 40%);
+}
+#title{
+	font-size: 300px
+}
+#dropdownmenuitems{
+	font-size: 50px;
+	font-family: Home School;
+}
+#menu{
+	font-size: 75px;
+	font-family: Home School;
+}
+
+	</style>
+</head>
+<body bgcolor="#E1F5FE">
+<center><font face="Home School" id="title">Home Page</font></center>
+<CENTER>
+<nav>
+	<ul>
+		<li><font id="menu">menu</font>
+			<ul>
+				<li><a href='parentspage.html'><font id="dropdownmenuitems">Parent Page</a></li>
+				<li><a href="shoppage.html"><font id="dropdownmenuitems">Shop Page</font></a></li>
+				<li><a href="community page.html"><font id="dropdownmenuitems">Community Page</font></a></li>
+				<li><a href="profile.html"><font id="dropdownmenuitems">Profile Page</font></a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+</CENTER>
+</body>
+</html>
